@@ -1,0 +1,27 @@
+import java.util.*;
+class AddDimensions
+{
+	public static void main(String[] args) 
+	{
+		int feet1,feet2,inch1,inch2;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter feets for first dimension");
+		feet1=s.nextInt();
+		System.out.println("Enter inches for first dimension");
+		inch1=s.nextInt();
+		System.out.println("Enter feets for second dimension");
+		feet2=s.nextInt();
+		System.out.println("Enter inches for second dimension");
+		inch2=s.nextInt();
+		int feet,inch;
+		feet=feet1+feet2;
+		inch=inch1+inch2;
+		if(inch>=12)
+		{
+			feet++;
+			inch=inch-12;
+		}
+		System.out.println("On adding "+feet1+" feet and "+inch1+" inches with "+feet2+" feets and "+inch2+" inches we get => "
+			+feet+" feets and "+inch+" inches.");
+	}
+}
